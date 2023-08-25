@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile shopping</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="container">
+    <header>
+        <h1>My Shopping Cart</h1>
+        <button onclick="window.location.reload()">Reload Page</button>
+    
+    </header>
+    
+    
+    <div class="shopping-items">
+        <div class="shopping-wraper">
+            <div class="item">
+                <div class="item-head">
+                    <img src="images/product-1.png" alt="">
+                    <h3 class="item-name">iPhone 11 128GB Black</h3>
+                </div>
+                <div class="btn">
+                    <button id='btn-minus-1'><i class="fa-solid fa-minus"></i></button>
+                    <input id="input-1" type="number" value="1" min="0">
+                    <button id="btn-plus-1"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                    <h4>$<span id="phone-price">1218</span></h4>
+                    <img class="remove-icon" src="images/remove.png" alt="">
+            </div>
+            
+            <!-- case item -->
+            <div class="item">
+                <div class="item-head">
+                    <img src="images/product-2.png" alt="phone case">
+                    <h3 class="item-name">iPhone 11 Silicone Case - Black</h3>
+                </div>
+                <div class="btn">
+                    <button id="btn-minus-2"><i class="fa-solid fa-minus"></i></button>
+                    <input id="input-2" type="number" value="1" min="0">
+                    <button id="btn-plus-2"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                    <h4>$<span id="case-price">52</span></h4>
+                    <img class="remove-icon" src="images/remove.png" alt="">
+            </div>
+            
+            <div class="item">
+                <div>
+                    <h4>Subtittle:</h4>
+                    <h4>Tax:</h4>
+                    <h4>Total:</h4>
+                </div>
+                <div>
+                    <h4>$<span id="subtittle">1219</span></h4>
+                    <h4>$<span id="tax">63</span></h4>
+                    <h4>$<span id="total">1335</span></h4>
+                </div>
+            </div> <!-- .//item-->
+          </div>
+          <div class="check-out">
+            <button id="check-out">Check Out</button>
+        </div>
+        </div>
+    </div>
+  </div>
+  
+  
+  <script src="app.js"></script>
+</body>
+</html>
